@@ -1,0 +1,118 @@
+.todo{
+  font-family: sans-serif;
+    width: 400px;
+    background-color: #f8f9fa;
+/*   border: 1px solid #343a40; */
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 1px 2px 20px #adb5bd;
+}
+header{
+  color: #343a40;
+  font-size: 30px;
+/*   text-align:  center; */
+  border-bottom: 3px solid #f59f00;
+    margin-bottom:10px;
+}
+.header{
+  margin:0;
+}
+.ipt{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+  gap: 20px;
+  
+/*     justify-content: space-between; */
+      ;
+}
+
+ input{
+    padding: 10px;
+    font-size: 12px;
+    outline: none;
+ background-color: #f8f9fa;
+   border:none;
+     border-bottom: 1px solid #343a40;
+    width: 1fr;
+/*     box-shadow: inset 1px 2px 2px #dee2e6; */
+}
+
+.sbtn{
+    background-color: #343a40;
+/*     border: 2px solid #f59f00; */
+  color: #f59f00;
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+    box-shadow: 1px 2px 2px #343a40;
+}
+
+.sbtn:hover{
+    background-color: #495057;
+}
+
+.list-main{
+/*     margin-top: 60px; */
+    border-radius: 5px;
+    overflow: hidden;
+    /* box-shadow: 2px 2px 2px gray; */
+}
+
+.list-main h4{
+/*     text-align: center; */
+    padding: 10px;
+    width: 400px;
+  color: #343a40
+/*     background-color: #f59f00; */
+    font-size: 20px;
+}
+
+.list-main ul{
+/*     background-color: #e9ecef; */
+/*     box-shadow: inset 2px 2px 2px gray, inset -19px -2px 2px gray; */
+    min-height: auto;
+    max-height: 250px;
+/*     overflow-y: scroll; */
+}
+
+.list-main li{
+    list-style: none;
+/*     font-family: cursive; */
+/*     font-variant: small-caps; */
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #343a40;
+/*     background-color: rgb(56, 56, 56); */
+    cursor: pointer;
+/*     border-radius: 5px; */
+  border-bottom: 1px solid #343a40;
+    
+}
+
+@media only screen and (max-width:450px){
+    .ipt{
+        flex-direction: column;
+    }
+    .ipt input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .todo{
+        width: 350px;
+    }
+    .list-main h4{
+        width: 350px;
+    }
+
+    .list-main ul{
+        min-height: auto;
+         max-height: 400px;
+         box-shadow: inset 2px 2px 2px gray, inset -4px -2px 2px gray;
+    }
+}
+
